@@ -1,0 +1,93 @@
+/* .resume {
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+} */
+
+.box {
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+}
+
+.name {
+  grid-area: name;
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.work {
+  grid-area: work;
+}
+
+.about {
+  grid-area: about;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.community {
+  grid-area: community;
+}
+
+.education {
+  grid-area: education;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "photo"
+    "name"
+    "about"
+    "work"
+    "education"
+    "skills"
+    "community"
+    "references";
+}
+
+@media (min-width: 1200px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "name photo"
+      "work about"
+      "work skills"
+      "community education";
+    grid-gap: 5px;
+  }
+}
+
+/* .resume {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "photo education"
+    "name work"
+    "about work"
+    "skills community";
+  grid-gap: 5px;
+} */
+
+@media print {
+  /* remove any screen only styles, for example link underline */
+  .box {
+    margin: 10px;
+    padding: 5px;
+    box-shadow: none;
+  }
+}
+
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}
