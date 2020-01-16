@@ -18,4 +18,6 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
     - skills
     - community
     - education
-    
+- consider using apline.js for any dynamic stuff
+- https://github.com/alpinejs/alpine
+- host in gh pages
