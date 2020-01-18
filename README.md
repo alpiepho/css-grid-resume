@@ -8,16 +8,7 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 
 ## TODO
 
-- flush out template data
-- add formatting
-    - name
-    - photo
-    - contact
-    - work
-    - about
-    - skills
-    - community
-    - education
+- build generic nested csss-grid based on my resume
 - consider using apline.js for any dynamic stuff
 - https://github.com/alpinejs/alpine
 - host in gh pages
