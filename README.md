@@ -1,5 +1,12 @@
 ## CSS Grid Resume Template
 
+:construction: WORK IN PROGRESS 
+
+
+Deployed on GitHub pages [here](https://alpiepho.github.io/css-grid-resume/).
+
+
+
 Example from https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/
 
 Even better is the code pen referenced.  It is layed out differently
@@ -8,8 +15,6 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 
 ## TODO
 
-- build generic nested csss-grid based on my resume
-- consider using apline.js for any dynamic stuff
-- https://github.com/alpinejs/alpine
-- host in gh pages
+- build generic nested css-grid based on my resume
+- consider using apline.js for any dynamic stuff https://github.com/alpinejs/alpine
 - complete README.md to instruct how to leverage this project
