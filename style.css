@@ -1,4 +1,4 @@
-
+/* NOTE: the inspector tools for css-grid are better in Firefox than Chrome */
 /* NOTE: if you are changing complex grid, make/comment-out copy, and make changes gradually */
 /* NOTE: columns/rows need to match area */
 /* NOTE: no duplicate area-names in the area section */
@@ -159,6 +159,42 @@
 
 .overview_summaryarea {
   grid-area: overview_summaryarea;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_summaryarea_summary"
+    "overview_summaryarea_summarylist";
+}
+
+.overview_summaryarea_summary {
+  grid-area: overview_summaryarea_summary;
+  margin: auto; /* center horizontally */
+}
+
+.overview_summaryarea_summarylist {
+  grid-area: overview_summaryarea_summarylist;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_summaryarea_summarylist_item1"
+    "overview_summaryarea_summarylist_item2"
+    "overview_summaryarea_summarylist_item3"
+    "overview_summaryarea_summarylist_item4";
+    grid-gap: 0px;
+}
+
+.overview_summaryarea_summarylist_item1 {
+  grid-area: overview_summaryarea_summarylist_item1;
+}
+.overview_summaryarea_summarylist_item2 {
+  grid-area: overview_summaryarea_summarylist_item2;
+}
+.overview_summaryarea_summarylist_item3 {
+  grid-area: overview_summaryarea_summarylist_item3;
+}
+.overview_summaryarea_summarylist_item4 {
+  grid-area: overview_summaryarea_summarylist_item4;
 }
 
 .overview_qualificationsarea {
