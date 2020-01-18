@@ -3,6 +3,19 @@
 /* NOTE: columns/rows need to match area */
 /* NOTE: no duplicate area-names in the area section */
 
+/* 
+NOTE: psychologically a reader tends to read a multi line table as 
+1) row one left to right
+2) column one top to bottom
+3) item at bottom-right
+Take away is to order your more important items as such
+example for 3x3 order as:
+priority1 priority2 priority3
+priority4 priority9 priority7
+priority5 priority8 priority6
+(my guess for priority7-9)
+*/
+
 .box {
   margin: 10px;
   padding: 5px;
@@ -162,44 +175,61 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "overview_summaryarea_summary"
-    "overview_summaryarea_summarylist";
+    "overview_summaryarea_description"
+    "overview_summaryarea_list";
 }
 
-.overview_summaryarea_summary {
-  grid-area: overview_summaryarea_summary;
+.overview_summaryarea_description {
+  grid-area: overview_summaryarea_description;
   margin: auto; /* center horizontally */
 }
 
-.overview_summaryarea_summarylist {
-  grid-area: overview_summaryarea_summarylist;
+.overview_summaryarea_list {
+  grid-area: overview_summaryarea_list;
   margin: auto; /* center horizontally */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "overview_summaryarea_summarylist_item1"
-    "overview_summaryarea_summarylist_item2"
-    "overview_summaryarea_summarylist_item3"
-    "overview_summaryarea_summarylist_item4";
+    "overview_summaryarea_list_item1"
+    "overview_summaryarea_list_item2"
+    "overview_summaryarea_list_item3"
+    "overview_summaryarea_list_item4";
     grid-gap: 0px;
 }
 
-.overview_summaryarea_summarylist_item1 {
-  grid-area: overview_summaryarea_summarylist_item1;
+.overview_summaryarea_list_item1 {
+  grid-area: overview_summaryarea_list_item1;
 }
-.overview_summaryarea_summarylist_item2 {
-  grid-area: overview_summaryarea_summarylist_item2;
+.overview_summaryarea_list_item2 {
+  grid-area: overview_summaryarea_list_item2;
 }
-.overview_summaryarea_summarylist_item3 {
-  grid-area: overview_summaryarea_summarylist_item3;
+.overview_summaryarea_list_item3 {
+  grid-area: overview_summaryarea_list_item3;
 }
-.overview_summaryarea_summarylist_item4 {
-  grid-area: overview_summaryarea_summarylist_item4;
+.overview_summaryarea_list_item4 {
+  grid-area: overview_summaryarea_list_item4;
 }
 
 .overview_qualificationsarea {
   grid-area: overview_qualificationsarea;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_qualificationsarea_title"
+    "overview_qualificationsarea_qualificationlist";
+    grid-gap: 0px;
 }
+
+.overview_qualificationsarea_title {
+  grid-area: overview_qualificationsarea_title;
+  margin: auto; /* center horizontally */
+}
+.overview_qualificationsarea_qualificationlist {
+  grid-area: overview_qualificationsarea_qualificationlist;
+}
+
+
 
 .overview_skillsarea {
   grid-area: overview_skillsarea;

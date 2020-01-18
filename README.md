@@ -12,3 +12,4 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 - consider using apline.js for any dynamic stuff
 - https://github.com/alpinejs/alpine
 - host in gh pages
+- complete README.md to instruct how to leverage this project
