@@ -18,3 +18,9 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 - build generic nested css-grid based on my resume
 - consider using apline.js for any dynamic stuff https://github.com/alpinejs/alpine
 - complete README.md to instruct how to leverage this project
+
+- use https://stackoverflow.com/questions/54791658/vertical-divider-as-pseudo-element-with-css-grids
+for seperators
+- class "postseperator?"
+- use :before and :after for "- ITEM -"
+- can I use css repeat instead of explicit grid items?

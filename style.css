@@ -194,7 +194,7 @@ priority5 priority8 priority6
     "overview_summaryarea_list_item2"
     "overview_summaryarea_list_item3"
     "overview_summaryarea_list_item4";
-    grid-gap: 0px;
+  grid-gap: 0px;
 }
 
 .overview_summaryarea_list_item1 {
@@ -217,23 +217,156 @@ priority5 priority8 priority6
   grid-template-columns: 1fr;
   grid-template-areas:
     "overview_qualificationsarea_title"
-    "overview_qualificationsarea_qualificationlist";
-    grid-gap: 0px;
+    "overview_qualificationsarea_list";
+  grid-gap: 0px;
 }
 
 .overview_qualificationsarea_title {
   grid-area: overview_qualificationsarea_title;
   margin: auto; /* center horizontally */
 }
-.overview_qualificationsarea_qualificationlist {
-  grid-area: overview_qualificationsarea_qualificationlist;
+
+.overview_qualificationsarea_list {
+  grid-area: overview_qualificationsarea_list;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "overview_qualificationsarea_list_item1 overview_qualificationsarea_list_item2 overview_qualificationsarea_list_item3"
+    "overview_qualificationsarea_list_item4 overview_qualificationsarea_list_item9 overview_qualificationsarea_list_item7"
+    "overview_qualificationsarea_list_item5 overview_qualificationsarea_list_item8 overview_qualificationsarea_list_item6";
+  grid-gap: 0px;
 }
 
-
+.overview_qualificationsarea_list_item1 {
+  grid-area: overview_qualificationsarea_list_item1;
+}
+.overview_qualificationsarea_list_item2 {
+  grid-area: overview_qualificationsarea_list_item2;
+}
+.overview_qualificationsarea_list_item3 {
+  grid-area: overview_qualificationsarea_list_item3;
+}
+.overview_qualificationsarea_list_item4 {
+  grid-area: overview_qualificationsarea_list_item4;
+}
+.overview_qualificationsarea_list_item5 {
+  grid-area: overview_qualificationsarea_list_item5;
+}
+.overview_qualificationsarea_list_item6 {
+  grid-area: overview_qualificationsarea_list_item6;
+}
+.overview_qualificationsarea_list_item7 {
+  grid-area: overview_qualificationsarea_list_item7;
+}
+.overview_qualificationsarea_list_item8 {
+  grid-area: overview_qualificationsarea_list_item8;
+}
+.overview_qualificationsarea_list_item9 {
+  grid-area: overview_qualificationsarea_list_item9;
+}
 
 .overview_skillsarea {
   grid-area: overview_skillsarea;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_skillsarea_title"
+    "overview_skillsarea_list";
+  grid-gap: 0px;
 }
+
+.overview_skillsarea_title {
+  grid-area: overview_skillsarea_title;
+  margin: auto; /* center horizontally */
+}
+
+.overview_skillsarea_list {
+  grid-area: overview_skillsarea_list;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_skillsarea_list_line1"
+    "overview_skillsarea_list_line2"
+    "overview_skillsarea_list_line3"
+    "overview_skillsarea_list_line4"
+    "overview_skillsarea_list_line5"
+    "overview_skillsarea_list_line6"
+    "overview_skillsarea_list_line7";
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_line1 {
+  grid-area: overview_skillsarea_list_line1;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_skillsarea_list_item01 overview_skillsarea_list_item02 overview_skillsarea_list_item03 overview_skillsarea_list_item04";
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_item01 {
+  grid-area: overview_skillsarea_list_item01;
+}
+
+.overview_skillsarea_list_item02 {
+  grid-area: overview_skillsarea_list_item02;
+}
+
+.overview_skillsarea_list_item03 {
+  grid-area: overview_skillsarea_list_item03;
+}
+
+.overview_skillsarea_list_item04 {
+  grid-area: overview_skillsarea_list_item04;
+}
+
+.overview_skillsarea_list_line2 {
+  grid-area: overview_skillsarea_list_line2;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_skillsarea_list_item05 overview_skillsarea_list_item06 overview_skillsarea_list_item07";
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_item05 {
+  grid-area: overview_skillsarea_list_item05;
+}
+
+.overview_skillsarea_list_item06 {
+  grid-area: overview_skillsarea_list_item06;
+}
+
+.overview_skillsarea_list_item07 {
+  grid-area: overview_skillsarea_list_item07;
+}
+
+
+.overview_skillsarea_list_line3 {
+  grid-area: overview_skillsarea_list_line3;
+}
+.overview_skillsarea_list_line4 {
+  grid-area: overview_skillsarea_list_line4;
+}
+.overview_skillsarea_list_line5 {
+  grid-area: overview_skillsarea_list_line5;
+}
+.overview_skillsarea_list_line6 {
+  grid-area: overview_skillsarea_list_line6;
+}
+.overview_skillsarea_list_line7 {
+  grid-area: overview_skillsarea_list_line7;
+}
+
+
+
+
+
 
 .workhistory {
   grid-area: workhistory;
