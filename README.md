@@ -23,4 +23,5 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 for seperators
 - class "postseperator?"
 - use :before and :after for "- ITEM -"
-- can I use css repeat instead of explicit grid items?
+- can I use css repeat instead of explicit grid items? not sure...more difficult to debug
+- change px to rem
