@@ -440,7 +440,6 @@ priority5 priority8 priority6
 .workhistory {
   grid-area: workhistory;
 }
-
 .workhistory_label {
   background-color: gray;
   width: 25%;
@@ -459,13 +458,53 @@ priority5 priority8 priority6
 .education {
   grid-area: education;
 }
+.education_label {
+  background-color: gray;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.education_hr {
+  background-color: gray;
+  width: 102%;
+  height: 2px;
+  margin-left: -10px;
+}
+
 
 .learning {
   grid-area: learning;
 }
+.learning_label {
+  background-color: gray;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.learning_hr {
+  background-color: gray;
+  width: 102%;
+  height: 2px;
+  margin-left: -10px;
+}
 
 .awards {
   grid-area: awards;
+}
+.awards_label {
+  background-color: gray;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.awards_hr {
+  background-color: gray;
+  width: 102%;
+  height: 2px;
+  margin-left: -10px;
 }
 
 @media print {

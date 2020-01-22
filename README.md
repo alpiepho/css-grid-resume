@@ -25,3 +25,4 @@ for seperators
 - use :before and :after for "- ITEM -"
 - can I use css repeat instead of explicit grid items? not sure...more difficult to debug
 - change px to rem
+- combine _label and _hr
