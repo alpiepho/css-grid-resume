@@ -454,6 +454,36 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
+.workhistory_list {
+  grid-area: workhistory_list;
+}
+.workhistory_entry {
+  grid-area: workhistory_entry;
+}
+.workhistory_entry_header {
+  grid-area: workhistory_entry_header;
+}
+.workhistory_entry_header {
+  grid-area: workhistory_entry_header;
+}
+.workhistory_entry_subtitle {
+  grid-area: workhistory_entry_subtitle;
+}
+.workhistory_entry_dates {
+  grid-area: workhistory_entry_dates;
+}
+.workhistory_entry_list {
+  grid-area: workhistory_entry_list;
+}
+.workhistory_entry_item {
+  grid-area: workhistory_entry_item;
+}
+
+
+
+
+
+
 
 .education {
   grid-area: education;
