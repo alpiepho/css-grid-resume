@@ -170,6 +170,15 @@ priority5 priority8 priority6
   grid-area: overview_subtitlearea_right;
 }
 
+
+
+
+/* TODO: fix above */
+
+
+
+
+/* OVERVIEW SUMMARY AREA */
 .overview_summaryarea {
   grid-area: overview_summaryarea;
   display: grid;
@@ -189,26 +198,18 @@ priority5 priority8 priority6
   margin: auto; /* center horizontally */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    "overview_summaryarea_list_item1"
-    "overview_summaryarea_list_item2"
-    "overview_summaryarea_list_item3"
-    "overview_summaryarea_list_item4";
   grid-gap: 0px;
 }
-.overview_summaryarea_list_item1 {
-  grid-area: overview_summaryarea_list_item1;
-}
-.overview_summaryarea_list_item2 {
-  grid-area: overview_summaryarea_list_item2;
-}
-.overview_summaryarea_list_item3 {
-  grid-area: overview_summaryarea_list_item3;
-}
-.overview_summaryarea_list_item4 {
-  grid-area: overview_summaryarea_list_item4;
+
+.overview_summaryarea_list_item {
 }
 
+.overview_summaryarea_list_item:before {
+  content: "\2022";
+}
+
+
+/* OVERVIEW QUALIFICATIONS AREA */
 .overview_qualificationsarea {
   grid-area: overview_qualificationsarea;
   margin: auto; /* center horizontally */
@@ -230,40 +231,23 @@ priority5 priority8 priority6
   margin: auto; /* center horizontally */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "overview_qualificationsarea_list_item1 overview_qualificationsarea_list_item2 overview_qualificationsarea_list_item3"
-    "overview_qualificationsarea_list_item4 overview_qualificationsarea_list_item9 overview_qualificationsarea_list_item7"
-    "overview_qualificationsarea_list_item5 overview_qualificationsarea_list_item8 overview_qualificationsarea_list_item6";
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0px;
 }
-.overview_qualificationsarea_list_item1 {
-  grid-area: overview_qualificationsarea_list_item1;
-}
-.overview_qualificationsarea_list_item2 {
-  grid-area: overview_qualificationsarea_list_item2;
-}
-.overview_qualificationsarea_list_item3 {
-  grid-area: overview_qualificationsarea_list_item3;
-}
-.overview_qualificationsarea_list_item4 {
-  grid-area: overview_qualificationsarea_list_item4;
-}
-.overview_qualificationsarea_list_item5 {
-  grid-area: overview_qualificationsarea_list_item5;
-}
-.overview_qualificationsarea_list_item6 {
-  grid-area: overview_qualificationsarea_list_item6;
-}
-.overview_qualificationsarea_list_item7 {
-  grid-area: overview_qualificationsarea_list_item7;
-}
-.overview_qualificationsarea_list_item8 {
-  grid-area: overview_qualificationsarea_list_item8;
-}
-.overview_qualificationsarea_list_item9 {
-  grid-area: overview_qualificationsarea_list_item9;
+
+.overview_qualificationsarea_list_item {
 }
 
+.overview_qualificationsarea_list_item:before {
+  content: "- ";
+}
+
+.overview_qualificationsarea_list_item:after {
+  content: " -";
+}
+
+
+/* OVERVIEW SKILLS AREA */
 .overview_skillsarea {
   grid-area: overview_skillsarea;
   margin: auto; /* center horizontally */
@@ -285,158 +269,48 @@ priority5 priority8 priority6
   margin: auto; /* center horizontally */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    "overview_skillsarea_list_line1"
-    "overview_skillsarea_list_line2"
-    "overview_skillsarea_list_line3"
-    "overview_skillsarea_list_line4"
-    "overview_skillsarea_list_line5"
-    "overview_skillsarea_list_line6"
-    "overview_skillsarea_list_line7";
   grid-gap: 0px;
 }
 
-.overview_skillsarea_list_line1 {
-  grid-area: overview_skillsarea_list_line1;
+.overview_skillsarea_list_item {
+}
+
+.overview_skillsarea_list_line_of1 {
   margin: auto; /* center horizontally */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "overview_skillsarea_list_item01 overview_skillsarea_list_item02 overview_skillsarea_list_item03 overview_skillsarea_list_item04";
   grid-gap: 0px;
 }
-.overview_skillsarea_list_item01 {
-  grid-area: overview_skillsarea_list_item01;
-}
-.overview_skillsarea_list_item02 {
-  grid-area: overview_skillsarea_list_item02;
-}
-.overview_skillsarea_list_item03 {
-  grid-area: overview_skillsarea_list_item03;
-}
-.overview_skillsarea_list_item04 {
-  grid-area: overview_skillsarea_list_item04;
-}
 
-.overview_skillsarea_list_line2 {
-  grid-area: overview_skillsarea_list_line2;
+.overview_skillsarea_list_line_of2 {
   margin: auto; /* center horizontally */
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "overview_skillsarea_list_item05 overview_skillsarea_list_item06 overview_skillsarea_list_item07";
+  grid-template-columns: 1fr 1fr;
   grid-gap: 0px;
 }
-.overview_skillsarea_list_item05 {
-  grid-area: overview_skillsarea_list_item05;
-}
-.overview_skillsarea_list_item06 {
-  grid-area: overview_skillsarea_list_item06;
-}
-.overview_skillsarea_list_item07 {
-  grid-area: overview_skillsarea_list_item07;
-}
 
-.overview_skillsarea_list_line3 {
-  grid-area: overview_skillsarea_list_line3;
+.overview_skillsarea_list_line_of3 {
   margin: auto; /* center horizontally */
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "overview_skillsarea_list_item08 overview_skillsarea_list_item09 overview_skillsarea_list_item10 overview_skillsarea_list_item11 overview_skillsarea_list_item12";
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0px;
 }
-.overview_skillsarea_list_item08 {
-  grid-area: overview_skillsarea_list_item08;
-}
-.overview_skillsarea_list_item09 {
-  grid-area: overview_skillsarea_list_item09;
-}
-.overview_skillsarea_list_item10 {
-  grid-area: overview_skillsarea_list_item10;
-}
-.overview_skillsarea_list_item11 {
-  grid-area: overview_skillsarea_list_item11;
-}
-.overview_skillsarea_list_item12 {
-  grid-area: overview_skillsarea_list_item12;
-}
 
-.overview_skillsarea_list_line4 {
-  grid-area: overview_skillsarea_list_line4;
+.overview_skillsarea_list_line_of4 {
   margin: auto; /* center horizontally */
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "overview_skillsarea_list_item13 overview_skillsarea_list_item14 overview_skillsarea_list_item15 overview_skillsarea_list_item16";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0px;
 }
-.overview_skillsarea_list_item13 {
-  grid-area: overview_skillsarea_list_item13;
-}
-.overview_skillsarea_list_item14 {
-  grid-area: overview_skillsarea_list_item14;
-}
-.overview_skillsarea_list_item15 {
-  grid-area: overview_skillsarea_list_item15;
-}
-.overview_skillsarea_list_item16 {
-  grid-area: overview_skillsarea_list_item16;
-}
 
-.overview_skillsarea_list_line5 {
-  grid-area: overview_skillsarea_list_line5;
+.overview_skillsarea_list_line_of5 {
   margin: auto; /* center horizontally */
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "overview_skillsarea_list_item17 overview_skillsarea_list_item18 overview_skillsarea_list_item19";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0px;
 }
-.overview_skillsarea_list_item17 {
-  grid-area: overview_skillsarea_list_item17;
-}
-.overview_skillsarea_list_item18 {
-  grid-area: overview_skillsarea_list_item18;
-}
-.overview_skillsarea_list_item19 {
-  grid-area: overview_skillsarea_list_item19;
-}
 
-.overview_skillsarea_list_line6 {
-  grid-area: overview_skillsarea_list_line6;
-  margin: auto; /* center horizontally */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "overview_skillsarea_list_item20 overview_skillsarea_list_item21 overview_skillsarea_list_item22 overview_skillsarea_list_item23";
-  grid-gap: 0px;
-}
-.overview_skillsarea_list_item20 {
-  grid-area: overview_skillsarea_list_item20;
-}
-.overview_skillsarea_list_item21 {
-  grid-area: overview_skillsarea_list_item21;
-}
-.overview_skillsarea_list_item22 {
-  grid-area: overview_skillsarea_list_item22;
-}
-.overview_skillsarea_list_item23 {
-  grid-area: overview_skillsarea_list_item23;
-}
-
-.overview_skillsarea_list_line7 {
-  grid-area: overview_skillsarea_list_line7;
-  margin: auto; /* center horizontally */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "overview_skillsarea_list_item24 overview_skillsarea_list_item25 overview_skillsarea_list_item26";
-  grid-gap: 0px;
-}
-.overview_skillsarea_list_item24 {
-  grid-area: overview_skillsarea_list_item24;
-}
-.overview_skillsarea_list_item25 {
-  grid-area: overview_skillsarea_list_item25;
-}
-.overview_skillsarea_list_item26 {
-  grid-area: overview_skillsarea_list_item26;
-}
-
+/* WORK HISTORY */
 .workhistory {
   grid-area: workhistory;
 }
@@ -457,26 +331,37 @@ priority5 priority8 priority6
 .workhistory_list {
   grid-area: workhistory_list;
 }
+
 .workhistory_entry {
   grid-area: workhistory_entry;
 }
+
 .workhistory_entry_header {
   grid-area: workhistory_entry_header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
 }
-.workhistory_entry_header {
-  grid-area: workhistory_entry_header;
+
+.workhistory_entry_title {
 }
+
+.workhistory_entry_title_pad {
+  text-align: right;
+}
+
 .workhistory_entry_subtitle {
-  grid-area: workhistory_entry_subtitle;
 }
+
 .workhistory_entry_dates {
-  grid-area: workhistory_entry_dates;
+  text-align: right;
 }
+
 .workhistory_entry_list {
-  grid-area: workhistory_entry_list;
 }
+
 .workhistory_entry_item {
-  grid-area: workhistory_entry_item;
 }
 
 

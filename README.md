@@ -23,7 +23,11 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 - use https://stackoverflow.com/questions/54791658/vertical-divider-as-pseudo-element-with-css-grids
 for seperators
 - class "postseperator?"
-- use :before and :after for "- ITEM -"
 - can I use css repeat instead of explicit grid items? not sure...more difficult to debug
 - change px to rem
 - combine _label and _hr
+
+
+How to use :before to add bullets
+https://www.w3.org/Style/Examples/007/color-bullets.en.html
+
