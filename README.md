@@ -20,14 +20,13 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 - consider using apline.js for any dynamic stuff https://github.com/alpinejs/alpine
 - complete README.md to instruct how to leverage this project
 
-- use https://stackoverflow.com/questions/54791658/vertical-divider-as-pseudo-element-with-css-grids
-for seperators
-- class "postseperator?"
-- can I use css repeat instead of explicit grid items? not sure...more difficult to debug
 - change px to rem
 - combine _label and _hr
+- BONUS: stick animation...start with Code Pen
 
 
 How to use :before to add bullets
 https://www.w3.org/Style/Examples/007/color-bullets.en.html
 
+use https://stackoverflow.com/questions/54791658/vertical-divider-as-pseudo-element-with-css-grids
+for seperators

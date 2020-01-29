@@ -64,41 +64,7 @@ priority5 priority8 priority6
 
 .header_contact {
   grid-area: header_contact;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "header_contact_cell header_contact_seperator1 header_contact_address header_contact_seperator2 header_contact_email header_contact_seperator3 header_contact_linkedin";
-}
-
-.header_contact_cell {
-  grid-area: header_contact_cell;
-}
-
-.header_contact_seperator1 {
-  grid-area: header_contact_seperator1;
   margin: auto; /* center horizontally */
-}
-
-.header_contact_address {
-  grid-area: header_contact_address;
-}
-
-.header_contact_seperator2 {
-  grid-area: header_contact_seperator2;
-  margin: auto; /* center horizontally */
-}
-
-.header_contact_email {
-  grid-area: header_contact_email;
-}
-
-.header_contact_seperator3 {
-  grid-area: header_contact_seperator3;
-  margin: auto; /* center horizontally */
-}
-
-.header_contact_linkedin {
-  grid-area: header_contact_linkedin;
 }
 
 .header_contact_hr {
@@ -132,42 +98,7 @@ priority5 priority8 priority6
 
 .overview_titlearea_subtitle {
   grid-area: overview_titlearea_subtitle;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1rf;
-  grid-template-rows: 1fr;
-  grid-template-areas: "overview_subtitlearea_left overview_subtitlearea_part1 overview_subtitlearea_seperator1 overview_subtitlearea_part2 overview_subtitlearea_seperator2 overview_subtitlearea_part3 overview_subtitlearea_seperator3 overview_subtitlearea_part4 overview_subtitlearea_right";
-}
-
-.overview_subtitlearea_left {
-  grid-area: overview_subtitlearea_left;
-}
-
-.overview_subtitlearea_part1 {
-  grid-area: overview_subtitlearea_part1;
-}
-
-.overview_subtitlearea_seperator1 {
-  grid-area: overview_subtitlearea_seperator1;
-}
-
-.overview_subtitlearea_part2 {
-  grid-area: overview_subtitlearea_part2;
-}
-
-.overview_subtitlearea_seperator2 {
-  grid-area: overview_subtitlearea_seperator2;
-}
-.overview_subtitlearea_part3 {
-  grid-area: overview_subtitlearea_part3;
-}
-.overview_subtitlearea_seperator3 {
-  grid-area: overview_subtitlearea_seperator3;
-}
-.overview_subtitlearea_part4 {
-  grid-area: overview_subtitlearea_part4;
-}
-.overview_subtitlearea_right {
-  grid-area: overview_subtitlearea_right;
+  margin: auto; /* center horizontally */
 }
 
 
