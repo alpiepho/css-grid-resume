@@ -34,3 +34,6 @@ https://www.w3.org/Style/Examples/007/color-bullets.en.html
 
 use https://stackoverflow.com/questions/54791658/vertical-divider-as-pseudo-element-with-css-grids
 for seperators
+
+used this for gh-pages (used the script only for now, with change to PUBLISH_DIR)
+https://github.com/peaceiris/actions-gh-pages
