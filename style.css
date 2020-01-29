@@ -35,7 +35,7 @@ priority5 priority8 priority6
     "awards";
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .resume {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -46,7 +46,7 @@ priority5 priority8 priority6
       "learning awards";
     grid-gap: 5px;
   }
-}
+} */
 
 .header {
   grid-area: header;
