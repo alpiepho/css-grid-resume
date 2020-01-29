@@ -1,0 +1,369 @@
+/* NOTE: the inspector tools for css-grid are better in Firefox than Chrome */
+/* NOTE: if you are changing complex grid, make/comment-out copy, and make changes gradually */
+/* NOTE: columns/rows need to match area */
+/* NOTE: no duplicate area-names in the area section */
+
+/* 
+NOTE: psychologically a reader tends to read a multi line table as 
+1) row one left to right
+2) column one top to bottom
+3) item at bottom-right
+Take away is to order your more important items as such
+example for 3x3 order as:
+priority1 priority2 priority3
+priority4 priority9 priority7
+priority5 priority8 priority6
+(my guess for priority7-9)
+*/
+
+.box {
+  margin: 10px;
+  padding: 5px;
+  /* DEBUG: uncomment to see boxes around pieces */
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "overview"
+    "workhistory"
+    "education"
+    "learning"
+    "awards";
+}
+
+@media (min-width: 1200px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header overview"
+      "workhistory education"
+      "learning awards";
+    grid-gap: 5px;
+  }
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header_fullname"
+    "header_contact";
+}
+
+.header_fullname {
+  grid-area: header_fullname;
+  margin: auto; /* center horizontally */
+}
+
+.header_contact {
+  grid-area: header_contact;
+  margin: auto; /* center horizontally */
+}
+
+.header_contact_hr {
+  width: 100%;
+}
+
+.overview {
+  grid-area: overview;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_titlearea"
+    "overview_summaryarea"
+    "overview_qualificationsarea"
+    "overview_skillsarea";
+}
+
+.overview_titlearea {
+  grid-area: overview_titlearea;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_titlearea_title"
+    "overview_titlearea_subtitle";
+}
+
+.overview_titlearea_title {
+  grid-area: overview_titlearea_title;
+  margin: auto; /* center horizontally */
+}
+
+.overview_titlearea_subtitle {
+  grid-area: overview_titlearea_subtitle;
+  margin: auto; /* center horizontally */
+}
+
+
+
+
+/* TODO: fix above */
+
+
+
+
+/* OVERVIEW SUMMARY AREA */
+.overview_summaryarea {
+  grid-area: overview_summaryarea;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_summaryarea_description"
+    "overview_summaryarea_list";
+}
+
+.overview_summaryarea_description {
+  grid-area: overview_summaryarea_description;
+  margin: auto; /* center horizontally */
+}
+
+.overview_summaryarea_list {
+  grid-area: overview_summaryarea_list;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0px;
+}
+
+.overview_summaryarea_list_item {
+}
+
+.overview_summaryarea_list_item:before {
+  content: "\2022";
+}
+
+
+/* OVERVIEW QUALIFICATIONS AREA */
+.overview_qualificationsarea {
+  grid-area: overview_qualificationsarea;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_qualificationsarea_title"
+    "overview_qualificationsarea_list";
+  grid-gap: 0px;
+}
+
+.overview_qualificationsarea_title {
+  grid-area: overview_qualificationsarea_title;
+  margin: auto; /* center horizontally */
+}
+
+.overview_qualificationsarea_list {
+  grid-area: overview_qualificationsarea_list;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.overview_qualificationsarea_list_item {
+}
+
+.overview_qualificationsarea_list_item:before {
+  content: "- ";
+}
+
+.overview_qualificationsarea_list_item:after {
+  content: " -";
+}
+
+
+/* OVERVIEW SKILLS AREA */
+.overview_skillsarea {
+  grid-area: overview_skillsarea;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "overview_skillsarea_title"
+    "overview_skillsarea_list";
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_title {
+  grid-area: overview_skillsarea_title;
+  margin: auto; /* center horizontally */
+}
+
+.overview_skillsarea_list {
+  grid-area: overview_skillsarea_list;
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_item {
+}
+
+.overview_skillsarea_list_line_of1 {
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_line_of2 {
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_line_of3 {
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_line_of4 {
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.overview_skillsarea_list_line_of5 {
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+/* WORK HISTORY */
+.workhistory {
+  grid-area: workhistory;
+}
+.workhistory_label {
+  background-color: gray;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.workhistory_hr {
+  background-color: gray;
+  width: 102%;
+  height: 2px;
+  margin-left: -10px;
+}
+
+.workhistory_list {
+  grid-area: workhistory_list;
+}
+
+.workhistory_entry {
+  grid-area: workhistory_entry;
+}
+
+.workhistory_entry_header {
+  grid-area: workhistory_entry_header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.workhistory_entry_title {
+}
+
+.workhistory_entry_title_pad {
+  text-align: right;
+}
+
+.workhistory_entry_subtitle {
+}
+
+.workhistory_entry_dates {
+  text-align: right;
+}
+
+.workhistory_entry_list {
+}
+
+.workhistory_entry_item {
+}
+
+
+
+
+
+
+
+.education {
+  grid-area: education;
+}
+.education_label {
+  background-color: gray;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.education_hr {
+  background-color: gray;
+  width: 102%;
+  height: 2px;
+  margin-left: -10px;
+}
+
+
+.learning {
+  grid-area: learning;
+}
+.learning_label {
+  background-color: gray;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.learning_hr {
+  background-color: gray;
+  width: 102%;
+  height: 2px;
+  margin-left: -10px;
+}
+
+.awards {
+  grid-area: awards;
+}
+.awards_label {
+  background-color: gray;
+  width: 25%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+.awards_hr {
+  background-color: gray;
+  width: 102%;
+  height: 2px;
+  margin-left: -10px;
+}
+
+@media print {
+  /* remove any screen only styles, for example link underline */
+  .box {
+    margin: 10px;
+    padding: 5px;
+    box-shadow: none;
+  }
+}
+
+@page {
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait;
+}
