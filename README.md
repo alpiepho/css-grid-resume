@@ -27,6 +27,7 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 - change px to rem
 - combine _label and _hr
 - BONUS: stick animation...start with Code Pen
+- review unused grid-areas
 
 
 How to use :before to add bullets
