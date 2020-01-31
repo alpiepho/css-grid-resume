@@ -2,6 +2,7 @@
 /* NOTE: if you are changing complex grid, make/comment-out copy, and make changes gradually */
 /* NOTE: columns/rows need to match area */
 /* NOTE: no duplicate area-names in the area section */
+/* NOTE: leaving empty class css, allows for easier browser tweaks */
 
 /* 
 NOTE: psychologically a reader tends to read a multi line table as 
@@ -17,7 +18,7 @@ priority5 priority8 priority6
 */
 
 .box {
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
   /* DEBUG: uncomment to see boxes around pieces */
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
@@ -46,19 +47,6 @@ priority5 priority8 priority6
     "learning"
     "awards";
 }
-
-/* @media (min-width: 1200px) {
-  .resume {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "header overview"
-      "workhistory education"
-      "learning awards";
-    grid-gap: 5px;
-  }
-} */
 
 .header {
   grid-area: header;
@@ -136,8 +124,9 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-/* .overview_summaryarea_list_item {
-} */
+.overview_summaryarea_list_item {
+  margin: 0px;
+}
 
 .overview_summaryarea_list_item:before {
   content: "\2022";
@@ -169,8 +158,8 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-/* .overview_qualificationsarea_list_item {
-} */
+.overview_qualificationsarea_list_item {
+}
 
 .overview_qualificationsarea_list_item:before {
   content: "- ";
@@ -205,8 +194,8 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-/* .overview_skillsarea_list_item {
-} */
+.overview_skillsarea_list_item {
+}
 
 .overview_skillsarea_list_line_of1 {
   margin: auto; /* center horizontally */
@@ -261,11 +250,11 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-/* .workhistory_list {
-} */
+.workhistory_list {
+}
 
-/* .workhistory_entry {
-} */
+.workhistory_entry {
+}
 
 .workhistory_entry_header {
   display: grid;
@@ -274,25 +263,25 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-/* .workhistory_entry_title {
-} */
+.workhistory_entry_title {
+}
 
 .workhistory_entry_title_pad {
   text-align: right;
 }
 
-/* .workhistory_entry_subtitle {
-} */
+.workhistory_entry_subtitle {
+}
 
 .workhistory_entry_dates {
   text-align: right;
 }
 
-/* .workhistory_entry_list {
-} */
+.workhistory_entry_list {
+}
 
-/* .workhistory_entry_item {
-} */
+.workhistory_entry_item {
+}
 
 .education {
   grid-area: education;
@@ -313,11 +302,11 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-/* .education_list {
-} */
+.education_list {
+}
 
-/* .education_entry {
-} */
+.education_entry {
+}
 
 .education_entry_header {
   display: grid;
@@ -325,11 +314,11 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-/* .education_entry_title {
+.education_entry_title {
 }
 
 .education_entry_subtitle {
-} */
+}
 
 .learning {
   grid-area: learning;
@@ -348,11 +337,11 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-/* .learning_list {
+.learning_list {
 }
 
 .learning_entry {
-} */
+}
 
 .learning_entry_header {
   display: grid;
@@ -360,11 +349,11 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-/* .learning_entry_title {
+.learning_entry_title {
 }
 
 .learning_entry_subtitle {
-} */
+}
 
 .awards {
   grid-area: awards;
@@ -383,11 +372,11 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-/* .awards_list {
+.awards_list {
 }
 
 .awards_entry {
-} */
+}
 
 .awards_entry_header {
   display: grid;
@@ -395,17 +384,33 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-/* .awards_entry_title {
+.awards_entry_title {
 }
 
 .awards_entry_subtitle {
+}
+
+
+/* @media (min-width: 1200px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header overview"
+      "workhistory education"
+      "learning awards";
+    grid-gap: 5px;
+  }
 } */
 
 @media print {
   /* remove any screen only styles, for example link underline */
+  .boxes-button {
+    display: none;
+  }
+  
   .box {
-    margin: 10px;
-    padding: 5px;
     box-shadow: none;
   }
 }
