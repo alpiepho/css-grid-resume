@@ -7,8 +7,25 @@
       Full Name Resume
     </title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function toggleBoxes() {
+        var list = document.getElementsByClassName("box");
+        //console.log(list);
+        //console.log(list.length);
+        for (var i = 0; i < list.length; i++) {
+          if (list[i].style.boxShadow == "none") {
+            list[i].style.boxShadow = "0 5px 9px 0 rgba(0, 0, 0, 0.35)"
+          }
+          else {
+            list[i].style.boxShadow = "none"
+          }
+        }
+      }
+    </script>
   </head>
   <body class="body">
+    <button class="boxes-button" onclick="toggleBoxes()">toggle boxes</button>
+
     <article class="resume">
       <section class="box header">
         <!-- <section>HEADER</section> -->
@@ -23,7 +40,9 @@
       <section class="box overview">
         <section class="box overview_titlearea">
           <!-- <section>TITLEAREA</section> -->
-          <section class="box overview_titlearea_title">JOBTITLE</section>
+          <section class="box overview_titlearea_title">
+            JOBTITLE
+          </section>
           <section class="box overview_titlearea_subtitle">
             <!-- <section>SUBTITLE</section> -->
             PART1 &nbsp;&bull;&nbsp; PART2 &nbsp;&bull;&nbsp; PART3
@@ -97,7 +116,9 @@
 
         <section class="box overview_skillsarea">
           <!-- <section>SKILLSAREA</section> -->
-          <section class="box overview_skillsarea_title">SKILLS</section>
+          <section class="box overview_skillsarea_title">
+            SKILLS
+          </section>
           <section class="box overview_skillsarea_list">
             <!-- <section>SKILLSLIST</section> -->
             <section class="box overview_skillsarea_list_line_of4">

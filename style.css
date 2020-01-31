@@ -23,6 +23,18 @@ priority5 priority8 priority6
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
 }
 
+.box-off {
+  box-shadow: none;
+}
+
+.boxes-button {
+  border: none;
+}
+
+.boxes-button:focus {
+  outline: 0;
+}
+
 .resume {
   display: grid;
   grid-template-columns: 1fr;
@@ -101,8 +113,6 @@ priority5 priority8 priority6
   margin: auto; /* center horizontally */
 }
 
-/* TODO: fix above */
-
 /* OVERVIEW SUMMARY AREA */
 .overview_summaryarea {
   grid-area: overview_summaryarea;
@@ -126,8 +136,8 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-.overview_summaryarea_list_item {
-}
+/* .overview_summaryarea_list_item {
+} */
 
 .overview_summaryarea_list_item:before {
   content: "\2022";
@@ -159,8 +169,8 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-.overview_qualificationsarea_list_item {
-}
+/* .overview_qualificationsarea_list_item {
+} */
 
 .overview_qualificationsarea_list_item:before {
   content: "- ";
@@ -195,8 +205,8 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
-.overview_skillsarea_list_item {
-}
+/* .overview_skillsarea_list_item {
+} */
 
 .overview_skillsarea_list_line_of1 {
   margin: auto; /* center horizontally */
@@ -251,41 +261,38 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-.workhistory_list {
-  /* grid-area: workhistory_list; */
-}
+/* .workhistory_list {
+} */
 
-.workhistory_entry {
-  /* grid-area: workhistory_entry; */
-}
+/* .workhistory_entry {
+} */
 
 .workhistory_entry_header {
-  grid-area: workhistory_entry_header;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 0px;
 }
 
-.workhistory_entry_title {
-}
+/* .workhistory_entry_title {
+} */
 
 .workhistory_entry_title_pad {
   text-align: right;
 }
 
-.workhistory_entry_subtitle {
-}
+/* .workhistory_entry_subtitle {
+} */
 
 .workhistory_entry_dates {
   text-align: right;
 }
 
-.workhistory_entry_list {
-}
+/* .workhistory_entry_list {
+} */
 
-.workhistory_entry_item {
-}
+/* .workhistory_entry_item {
+} */
 
 .education {
   grid-area: education;
@@ -306,26 +313,23 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-.education_list {
-  grid-area: education_list;
-}
+/* .education_list {
+} */
 
-.education_entry {
-  grid-area: education_entry;
-}
+/* .education_entry {
+} */
 
 .education_entry_header {
-  grid-area: education_entry_header;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0px;
 }
 
-.education_entry_title {
+/* .education_entry_title {
 }
 
 .education_entry_subtitle {
-}
+} */
 
 .learning {
   grid-area: learning;
@@ -344,26 +348,23 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-.learning_list {
-  grid-area: learning_list;
+/* .learning_list {
 }
 
 .learning_entry {
-  grid-area: learning_entry;
-}
+} */
 
 .learning_entry_header {
-  grid-area: learning_entry_header;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0px;
 }
 
-.learning_entry_title {
+/* .learning_entry_title {
 }
 
 .learning_entry_subtitle {
-}
+} */
 
 .awards {
   grid-area: awards;
@@ -382,26 +383,23 @@ priority5 priority8 priority6
   margin-left: -10px;
 }
 
-.awards_list {
-  grid-area: awards_list;
+/* .awards_list {
 }
 
 .awards_entry {
-  grid-area: awards_entry;
-}
+} */
 
 .awards_entry_header {
-  grid-area: awards_entry_header;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0px;
 }
 
-.awards_entry_title {
+/* .awards_entry_title {
 }
 
 .awards_entry_subtitle {
-}
+} */
 
 @media print {
   /* remove any screen only styles, for example link underline */

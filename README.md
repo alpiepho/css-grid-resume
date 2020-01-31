@@ -20,14 +20,12 @@ https://codepen.io/alichur/embed/bGNGGNP?height=367&theme-id=1&default-tab=resul
 
 ## TODO
 
-- build generic nested css-grid based on my resume
 - consider using apline.js for any dynamic stuff https://github.com/alpinejs/alpine
 - complete README.md to instruct how to leverage this project
 - adjust based on media size
 - change px to rem
 - combine _label and _hr
 - BONUS: stick animation...start with Code Pen
-- review unused grid-areas
 
 
 How to use :before to add bullets
