@@ -18,6 +18,36 @@ web browsers, it is a normal page with some action buttons (possibly a drop down
 
 My hope is that the origianl template and this concrete example will be useful for others to copy/clone and add their own online resume.
 
+## Cloning/Copying Project
+
+This project uses a very simple Github Actions script.  When you first commit it to your
+own GitHub project it will fail.  This is because you need to generate and install your
+own PERSONAL_TOKEN.  
+
+To generate a PERSONAL_TOKEN:
+- click on your user icon in the top right of GitHub page:, select settings
+- on lower left, select 'Deveoper settings'
+- on left, select 'Personal acces tokens'
+- use button 'generate new token'
+- you will need to enter password for GitHub
+- name this token the same as the GitHub project
+- select 'repo' permissions
+- copy the key (don't close window until the install is done, you might need to go back)
+
+To install a PERSONAL_TOKEN:
+- navigate to your Github project
+- select 'Settings' tab
+- on left, select 'Secrets'
+- add new Secret
+- name it PERSONAL_TOKEN
+- copy/paste token from generation above
+
+Test GitHub Action:
+- Change something and push
+- I find it easiest to use GitHub page and edit README.md (add a line)
+- If it passes, you can close generation window
+
+
 
 ## Background
 
