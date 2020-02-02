@@ -21,7 +21,7 @@ priority5 priority8 priority6
   margin: 5px;
   padding: 5px;
   /* DEBUG: uncomment to see boxes around pieces */
-  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+  //box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
 }
 
 .box-off {
@@ -46,6 +46,7 @@ priority5 priority8 priority6
     "education"
     "learning"
     "awards";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header {
@@ -232,12 +233,20 @@ priority5 priority8 priority6
   grid-gap: 0px;
 }
 
+.overview_skillsarea_list_line_of6 {
+  margin: auto; /* center horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
 /* WORK HISTORY */
 .workhistory {
   grid-area: workhistory;
 }
 .workhistory_label {
   background-color: gray;
+  color: white;
   width: 25%;
   padding: 10px;
   margin-bottom: -10px;
@@ -289,6 +298,7 @@ priority5 priority8 priority6
 
 .education_label {
   background-color: gray;
+  color: white;
   width: 25%;
   padding: 10px;
   margin-bottom: -10px;
@@ -325,6 +335,7 @@ priority5 priority8 priority6
 }
 .learning_label {
   background-color: gray;
+  color: white;
   width: 25%;
   padding: 10px;
   margin-bottom: -10px;
@@ -360,6 +371,7 @@ priority5 priority8 priority6
 }
 .awards_label {
   background-color: gray;
+  color: white;
   width: 25%;
   padding: 10px;
   margin-bottom: -10px;
