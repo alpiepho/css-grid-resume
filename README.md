@@ -5,9 +5,6 @@
 ## CSS Grid Resume Template
 
 
-:construction: WORK IN PROGRESS 
-
-
 Deployed on GitHub pages [here](https://alpiepho.github.io/css-grid-resume/).
 
 A concrete example of my own resume can be found [here](https://github.com/alpiepho/css-grid-resume-mine).
