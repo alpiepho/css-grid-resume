@@ -3,36 +3,49 @@
 /* NOTE: columns/rows need to match area */
 /* NOTE: no duplicate area-names in the area section */
 /* NOTE: leaving empty class css, allows for easier browser tweaks */
+/* NOTE: had to use &nbsp; to make skills with | to look good */
+/* NOTE: you may need to play with sectin widths if fields wrap to next line */
 
-/* 
-NOTE: psychologically a reader tends to read a multi line table as 
-1) row one left to right
-2) column one top to bottom
-3) item at bottom-right
-Take away is to order your more important items as such
-example for 3x3 order as:
-priority1 priority2 priority3
-priority4 priority9 priority7
-priority5 priority8 priority6
-(my guess for priority7-9)
-*/
+/* using a purple color #9950f1, noting here to help search/replace */
+
+
+body {
+}
+
+.dark {
+  background-color: #111111;
+  color: #aaaaaa;
+}
 
 .box {
-  margin: 5px;
+  margin: 0px;
   padding: 5px;
   /* DEBUG: uncomment to see boxes around pieces */
-  //box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+  /* box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35); */
 }
 
 .box-off {
   box-shadow: none;
 }
 
-.boxes-button {
+.menu-button {
   border: none;
+  min-width: 40px;
+  color: #aaaaaa;
 }
 
-.boxes-button:focus {
+.menu-button:focus {
+  outline: 0;
+}
+
+.menu-option-button {
+  border: none;
+  min-width: 40px;
+  padding: 5px;
+  color: #aaaaaa;
+}
+
+.menu-option-button:focus {
   outline: 0;
 }
 
@@ -46,7 +59,13 @@ priority5 priority8 priority6
     "education"
     "learning"
     "awards";
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10pt;
+}
+
+.page_break {
+  display: none;
 }
 
 .header {
@@ -61,15 +80,30 @@ priority5 priority8 priority6
 .header_fullname {
   grid-area: header_fullname;
   margin: auto; /* center horizontally */
+  font-size: 32pt;
+  font-weight: bold;
+  color: #818181;
 }
 
 .header_contact {
   grid-area: header_contact;
   margin: auto; /* center horizontally */
+  width: 400px; /* NOTE: you may need to play with this if fields wrap to next line */
+}
+
+.header_contact_symbol {
+  color: #9950f1;
+  font-weight: bolder;
 }
 
 .header_contact_hr {
-  width: 100%;
+  /* background-color: gray; */
+  color: #9950f1;
+  background-color: #9950f1;
+  width: 102%;
+  height: 1px;
+  margin-left: -10px;
+  margin-top: -4px;
 }
 
 .overview {
@@ -84,6 +118,7 @@ priority5 priority8 priority6
 }
 
 .overview_titlearea {
+  padding: 0px;
   grid-area: overview_titlearea;
   display: grid;
   grid-template-columns: 1fr;
@@ -95,11 +130,18 @@ priority5 priority8 priority6
 .overview_titlearea_title {
   grid-area: overview_titlearea_title;
   margin: auto; /* center horizontally */
+  font-size: 20pt;
+  font-weight: bold;
+  color: #818181;
 }
 
 .overview_titlearea_subtitle {
   grid-area: overview_titlearea_subtitle;
   margin: auto; /* center horizontally */
+  font-size: 16pt;
+  font-weight: bold;
+  color: #818181;
+  width: 400px; /* NOTE: you may need to play with this if fields wrap to next line */
 }
 
 /* OVERVIEW SUMMARY AREA */
@@ -127,14 +169,17 @@ priority5 priority8 priority6
 
 .overview_summaryarea_list_item {
   margin: 0px;
+  padding: 2px;
 }
 
 .overview_summaryarea_list_item:before {
   content: "\2022";
+  font-weight: bold;
 }
 
 /* OVERVIEW QUALIFICATIONS AREA */
 .overview_qualificationsarea {
+  padding: 0px;
   grid-area: overview_qualificationsarea;
   margin: auto; /* center horizontally */
   display: grid;
@@ -143,11 +188,15 @@ priority5 priority8 priority6
     "overview_qualificationsarea_title"
     "overview_qualificationsarea_list";
   grid-gap: 0px;
+  width: 400px; /* NOTE: you may need to play with this if fields wrap to next line */
 }
 
 .overview_qualificationsarea_title {
   grid-area: overview_qualificationsarea_title;
   margin: auto; /* center horizontally */
+  font-size: 14pt;
+  font-weight: bold;
+  color: #818181;
 }
 
 .overview_qualificationsarea_list {
@@ -172,6 +221,7 @@ priority5 priority8 priority6
 
 /* OVERVIEW SKILLS AREA */
 .overview_skillsarea {
+  padding: 0px;
   grid-area: overview_skillsarea;
   margin: auto; /* center horizontally */
   display: grid;
@@ -180,80 +230,49 @@ priority5 priority8 priority6
     "overview_skillsarea_title"
     "overview_skillsarea_list";
   grid-gap: 0px;
+  width: 400px; /* NOTE: you may need to play with this if fields wrap to next line */
 }
 
 .overview_skillsarea_title {
   grid-area: overview_skillsarea_title;
   margin: auto; /* center horizontally */
+  font-size: 14pt;
+  font-weight: bold;
+  color: #818181;
 }
 
 .overview_skillsarea_list {
   grid-area: overview_skillsarea_list;
   margin: auto; /* center horizontally */
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0px;
-}
-
-.overview_skillsarea_list_item {
-}
-
-.overview_skillsarea_list_line_of1 {
-  margin: auto; /* center horizontally */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0px;
-}
-
-.overview_skillsarea_list_line_of2 {
-  margin: auto; /* center horizontally */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0px;
-}
-
-.overview_skillsarea_list_line_of3 {
-  margin: auto; /* center horizontally */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0px;
-}
-
-.overview_skillsarea_list_line_of4 {
-  margin: auto; /* center horizontally */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 0px;
-}
-
-.overview_skillsarea_list_line_of5 {
-  margin: auto; /* center horizontally */
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0px;
 }
 
-.overview_skillsarea_list_line_of6 {
-  margin: auto; /* center horizontally */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 0px;
+.overview_skillsarea_list_item {
+  margin: 0px;
+  padding: 4px;
 }
+
 
 /* WORK HISTORY */
 .workhistory {
+  margin-top: 30px;
   grid-area: workhistory;
 }
 .workhistory_label {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #9950f1;
   color: white;
-  width: 25%;
-  padding: 10px;
+  font-weight: bold;
+  width: 20%;
+  padding: 6px;
   margin-bottom: -10px;
   margin-left: -10px;
 }
 .workhistory_hr {
   background-color: gray;
+  background-color: #9950f1;
   width: 102%;
   height: 2px;
   margin-left: -10px;
@@ -263,6 +282,7 @@ priority5 priority8 priority6
 }
 
 .workhistory_entry {
+  margin-top: 15px;
 }
 
 .workhistory_entry_header {
@@ -273,6 +293,10 @@ priority5 priority8 priority6
 }
 
 .workhistory_entry_title {
+}
+
+.workhistory_entry_title_name {
+  color: #818181;
 }
 
 .workhistory_entry_title_pad {
@@ -290,6 +314,8 @@ priority5 priority8 priority6
 }
 
 .workhistory_entry_item {
+  margin: 0px;
+  padding: 2px;
 }
 
 .education {
@@ -297,16 +323,19 @@ priority5 priority8 priority6
 }
 
 .education_label {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #9950f1;
   color: white;
-  width: 25%;
-  padding: 10px;
+  font-weight: bold;
+  width: 20%;
+  padding: 6px;
   margin-bottom: -10px;
   margin-left: -10px;
 }
 
 .education_hr {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #9950f1;
   width: 102%;
   height: 2px;
   margin-left: -10px;
@@ -327,6 +356,10 @@ priority5 priority8 priority6
 .education_entry_title {
 }
 
+.education_entry_title_name {
+  color: #818181;
+}
+
 .education_entry_subtitle {
 }
 
@@ -334,15 +367,18 @@ priority5 priority8 priority6
   grid-area: learning;
 }
 .learning_label {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #9950f1;
   color: white;
-  width: 25%;
-  padding: 10px;
+  font-weight: bold;
+  width: 20%;
+  padding: 6px;
   margin-bottom: -10px;
   margin-left: -10px;
 }
 .learning_hr {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #9950f1;
   width: 102%;
   height: 2px;
   margin-left: -10px;
@@ -363,6 +399,10 @@ priority5 priority8 priority6
 .learning_entry_title {
 }
 
+.learning_entry_title_name {
+  color: #818181;
+}
+
 .learning_entry_subtitle {
 }
 
@@ -370,15 +410,18 @@ priority5 priority8 priority6
   grid-area: awards;
 }
 .awards_label {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #9950f1;
   color: white;
-  width: 25%;
-  padding: 10px;
+  font-weight: bold;
+  width: 20%;
+  padding: 6px;
   margin-bottom: -10px;
   margin-left: -10px;
 }
 .awards_hr {
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #9950f1;
   width: 102%;
   height: 2px;
   margin-left: -10px;
@@ -388,6 +431,8 @@ priority5 priority8 priority6
 }
 
 .awards_entry {
+  margin: 0px;
+  padding: 2px;
 }
 
 .awards_entry_header {
@@ -402,7 +447,6 @@ priority5 priority8 priority6
 .awards_entry_subtitle {
 }
 
-
 /* @media (min-width: 1200px) {
   .resume {
     display: grid;
@@ -416,19 +460,39 @@ priority5 priority8 priority6
   }
 } */
 
+@media only screen and (max-width: 600px) {
+  .overview_qualificationsarea_list {
+    grid-area: overview_qualificationsarea_list;
+    margin: auto; /* center horizontally */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+  }
+  .overview_qualificationsarea_list_item:after {
+    content: "";
+  }
+  
+}
+
 @media print {
   /* remove any screen only styles, for example link underline */
   .boxes-button {
     display: none;
   }
-  
+
   .box {
     box-shadow: none;
   }
+
+  .page_break {
+    display: block;
+  }  
 }
 
 @page {
   padding: 0;
   margin: 0cm;
   size: A4 portrait;
+
 }
