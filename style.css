@@ -4,9 +4,8 @@
 /* NOTE: no duplicate area-names in the area section */
 /* NOTE: leaving empty class css, allows for easier browser tweaks */
 /* NOTE: had to use &nbsp; to make skills with | to look good */
-/* NOTE: you may need to play with sectin widths if fields wrap to next line */
+/* NOTE: you may need to play with section widths if fields wrap to next line */
 
-/* using a purple color #9950f1, noting here to help search/replace */
 /* 
 annimation plan:
 - [ 0.0s] zoom1 (1s) header_fullname
@@ -15,17 +14,21 @@ annimation plan:
 - [ 3.0s] zoom1 (1s) header_fullname 
 */
 
+:root {
+  --theme-color: #9950f1; /* using a purple color */
+  --background-color: white;
+  --color: black;
+  --label-color: #818181;
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--color);
 }
 
 a {
   /* text-decoration: none; */
   color: inherit;
-}
-
-.dark {
-  background-color: #111111;
-  color: #aaaaaa;
 }
 
 .box {
@@ -93,7 +96,7 @@ a {
   margin: auto; /* center horizontally */
   font-size: 32pt;
   font-weight: bold;
-  color: #818181;
+  color: var(--label-color);
   animation-name: zoom1;
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
@@ -109,14 +112,14 @@ a {
 }
 
 .header_contact_symbol {
-  color: #9950f1;
+  color: var(--theme-color);
   font-weight: bolder;
 }
 
 .header_contact_hr {
   /* background-color: gray; */
-  color: #9950f1;
-  background-color: #9950f1;
+  background-color: var(--theme-color);
+  border-color: transparent;
   width: 102%;
   height: 1px;
   margin-left: -10px;
@@ -149,7 +152,7 @@ a {
   margin: auto; /* center horizontally */
   font-size: 20pt;
   font-weight: bold;
-  color: #818181;
+  color: var(--label-color);
   animation-name: zoom2;
   animation-duration: 1.0s;
   animation-timing-function: ease-in-out;
@@ -163,7 +166,7 @@ a {
   margin: auto; /* center horizontally */
   font-size: 16pt;
   font-weight: bold;
-  color: #818181;
+  color: var(--label-color);
   animation-name: zoom2;
   animation-duration: 1.0s;
   animation-timing-function: ease-in-out;
@@ -225,7 +228,7 @@ a {
   margin: auto; /* center horizontally */
   font-size: 14pt;
   font-weight: bold;
-  color: #818181;
+  color: var(--label-color);
 }
 
 .overview_qualificationsarea_list {
@@ -267,7 +270,7 @@ a {
   margin: auto; /* center horizontally */
   font-size: 14pt;
   font-weight: bold;
-  color: #818181;
+  color: var(--label-color);
 }
 
 .overview_skillsarea_list {
@@ -291,7 +294,7 @@ a {
 }
 .workhistory_label {
   /* background-color: gray; */
-  background-color: #9950f1;
+  background-color: var(--theme-color);
   color: white;
   font-weight: bold;
   width: 20%;
@@ -301,7 +304,8 @@ a {
 }
 .workhistory_hr {
   background-color: gray;
-  background-color: #9950f1;
+  background-color: var(--theme-color);
+  border-color: transparent;
   width: 102%;
   height: 2px;
   margin-left: -10px;
@@ -325,7 +329,7 @@ a {
 }
 
 .workhistory_entry_title_name {
-  color: #818181;
+  color: var(--label-color);
 }
 
 .workhistory_entry_title_pad {
@@ -353,7 +357,7 @@ a {
 
 .education_label {
   /* background-color: gray; */
-  background-color: #9950f1;
+  background-color: var(--theme-color);
   color: white;
   font-weight: bold;
   width: 20%;
@@ -364,7 +368,8 @@ a {
 
 .education_hr {
   /* background-color: gray; */
-  background-color: #9950f1;
+  background-color: var(--theme-color);
+  border-color: transparent;
   width: 102%;
   height: 2px;
   margin-left: -10px;
@@ -386,7 +391,7 @@ a {
 }
 
 .education_entry_title_name {
-  color: #818181;
+  color: var(--label-color);
 }
 
 .education_entry_subtitle {
@@ -397,7 +402,7 @@ a {
 }
 .learning_label {
   /* background-color: gray; */
-  background-color: #9950f1;
+  background-color: var(--theme-color);
   color: white;
   font-weight: bold;
   width: 20%;
@@ -407,7 +412,8 @@ a {
 }
 .learning_hr {
   /* background-color: gray; */
-  background-color: #9950f1;
+  background-color: var(--theme-color);
+  border-color: transparent;
   width: 102%;
   height: 2px;
   margin-left: -10px;
@@ -429,7 +435,7 @@ a {
 }
 
 .learning_entry_title_name {
-  color: #818181;
+  color: var(--label-color);
 }
 
 .learning_entry_subtitle {
@@ -440,7 +446,7 @@ a {
 }
 .awards_label {
   /* background-color: gray; */
-  background-color: #9950f1;
+  background-color: var(--theme-color);
   color: white;
   font-weight: bold;
   width: 20%;
@@ -450,10 +456,15 @@ a {
 }
 .awards_hr {
   /* background-color: gray; */
-  background-color: #9950f1;
+  background-color:  var(--theme-color);
+  border-color: transparent;
   width: 102%;
   height: 2px;
   margin-left: -10px;
+}
+
+.awards_title {
+  color: var(--label-color); 
 }
 
 .awards_list {
@@ -505,34 +516,34 @@ a {
 
 @keyframes zoom1 {
   0% {
-    transform: scale(1.0);
+    opacity: 1.0;
   }
   12.5% {
-    transform: scale(1.5);
+    opacity: 0.5;
   }
   25% {
-    transform: scale(1.0);
+    opacity: 1.0;
   }
   75% {
-    transform: scale(1.0);
+    opacity: 1.0;
   }
   87.5% {
-    transform: scale(1.5);
+    opacity: 0.5;
   }
   100% {
-    transform: scale(1.0);
+    opacity: 1.0;
   }
 }
 
 @keyframes zoom2 {
   0% {
-    transform: scale(1.0);
+    opacity: 1.0;
   }
   50% {
-    transform: scale(1.2);
+    opacity: 0.5;
   }
   100% {
-    transform: scale(1.0);
+    opacity: 1.0;
   }
 }
 

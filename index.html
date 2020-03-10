@@ -37,11 +37,14 @@
         }
       }
       function toggleDark() {
-        var body = document.body;
-        if (body.classList.contains("dark")) {
-          body.classList.remove("dark");
-        } else {
-          body.classList.add("dark");
+        const root = document.documentElement;
+        if (root.style.getPropertyValue('--background-color') == 'white') {
+          root.style.setProperty('--background-color', '#111111')
+          root.style.setProperty('--color', '#aaaaaa')
+        }
+        else {
+          root.style.setProperty('--background-color', 'white')
+          root.style.setProperty('--color', 'black')
         }
       }
     </script>
@@ -483,6 +486,7 @@
       <section class="box awards">
         <section class="awards_label">AWARDS</section>
         <hr class="awards_hr" />
+        <section class="box awards_title">AWARDS</section>
         <!-- <section>AWARDS</section> -->
         <section class="box awards_list">
           <section class="box award_entry">
