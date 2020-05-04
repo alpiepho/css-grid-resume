@@ -64,7 +64,6 @@ bven better is the code pen referenced.  It is layed out differently.
 
 ## My onging TODO List and Ideas
 
-- Need bigger icons
 - change px to rem
 - BONUS: easteregg animation
 
